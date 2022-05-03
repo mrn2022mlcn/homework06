@@ -427,7 +427,8 @@
     <form>
         <div class="modal-field">
         <label class="modal-label" for="user-name">Имя</label>
-        <input type="text"
+        <input 
+        type="text"
         class="modal-input" 
         name="user-name" 
         required 
@@ -440,7 +441,8 @@
      </div>       
       
         <label class="modal-label" for="user-tel">Телефон</label>
-            <input type="tel"
+            <input
+            type="tel"
             class="modal-input"
             name="user-tel" 
             required
@@ -449,7 +451,8 @@
         
 
         <label class="modal-label" for="user-email">Почта</label>
-            <input type="email"
+            <input 
+            type="email"
             class="modal-input"
             name="user-email" 
             required
@@ -458,14 +461,25 @@
         
 
 <div class="modal-field">
-        <label class="modal-label" for="user-text">Комментарий</label>
-            <textarea name="user-text"
+        <label class="modal-label"
+         for="user-text">Комментарий</label>
+            <textarea
+            name="user-text"
+            id="user-text"
             rows="8" 
-            placeholder="Введите текст"
-            id="user-text">
-        </textarea>
-        
+            placeholder="Введите текст" class="modal-text"
+            ></textarea>
 </div>
+
+    <label class="modal-checkbox">
+    <input 
+    type="checkbox"
+    name="accept" 
+    value="" />
+    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+  </label>
+
+<button type="submit" class="submit-btn">Отправить</button>
     </form>
 
     </div>

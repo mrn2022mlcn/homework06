@@ -630,8 +630,8 @@ fill: var(--accent-color);
     padding: 40px;
     top: 50%;
     left: 50%;
-    height: 581px;
-    width: 528px;
+    min-height: 581px;
+    min-width: 528px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
      0px 1px 1px rgba(0, 0, 0, 0.14), 
      0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -679,20 +679,73 @@ fill: var(--accent-color);
     padding-bottom: 14px;
 }
 
-.input {
+/* .modal-field {
     position: relative;
     width: 100%;
     margin: 0 auto;
-}
+} */
 
-.modal-icon-logo {
+/* .modal-icon-logo {
     position: absolute;
     top: 14px;
     left: 15px;
     width: 12px;
     height: 12px;
+} */
+
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
 }
 
+.modal-text{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(117, 117, 117, 0.5);
+    resize: none;
+}
+
+.modal-checkbox {
+    margin: 20px auto 30px auto;
+
+    width: 400.62px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: auto; 
+    margin-left: auto;
+    padding: 10px auto 10px auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-bg-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 /* Portfolio styles */
 
 .visually-hidden {
