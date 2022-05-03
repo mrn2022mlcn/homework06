@@ -416,9 +416,58 @@
 
 <div class="backdrop is-hidden" data-modal >
     <div class="modal">
-        <svg class="modal-icon" width="30" height="30" data-modal-close >
-            <use href="./images/symbol-defsclose.svg#icon-close"></use>
+        <button type="button" class="btn-modal-close" data-modal-close>
+        <svg class="modal-icon" width="11" height="11"  >
+            <use href="./images/vectoropt.svg#icon-Vector"></use>
         </svg>
+    </button>
+    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+    
+    <form>
+        <div class="modal-field">
+        <label class="modal-label" for="user-name">Имя</label>
+        <input type="text"
+        class="modal-input" 
+        name="user-name" 
+        required 
+        id="user-name"
+        />
+        
+    <!-- <svg class="modal-icon-logo" width="12" height="12">
+            <use href="./images/modal.svg#icon-person-black"></use>
+        </svg> -->
+     </div>       
+      
+        <label class="modal-label" for="user-tel">Телефон</label>
+            <input type="tel"
+            class="modal-input"
+            name="user-tel" 
+            required
+            id="user-tel"
+             />
+        
+
+        <label class="modal-label" for="user-email">Почта</label>
+            <input type="email"
+            class="modal-input"
+            name="user-email" 
+            required
+            id="user-email"
+            />
+        
+
+<div class="modal-field">
+        <label class="modal-label" for="user-text">Комментарий</label>
+            <textarea name="user-text"
+            rows="8" 
+            placeholder="Введите текст"
+            id="user-text">
+        </textarea>
+        
+</div>
+    </form>
+
     </div>
 </div>
 
