@@ -404,12 +404,27 @@
             </a>
             </li>
             <li class="join-soc-item">
-                <a href="" class="join-soc-link"><svg class="join-soc-icon" width="20" height="20">
+                <a href="" class="join-soc-link">
+                    <svg class="join-soc-icon" width="20" height="20">
                     <use href="./images/symbol-defs opt.svg#icon-linkedin-1"></use>
                 </svg>
             </a> 
             </li>
         </ul>
+    </div>
+
+    <div class="footer-subscribe">
+        <h3 class="join">Подпишитесь на рассылку</h3>
+        <form>
+            <input
+            type="email"
+            class="footer-input"
+            name="subscribe-mail"
+            placeholder="E-mail"
+            />   
+            <button type="submit" 
+            class="subscribe-btn">Подписаться</button>
+        </form>
     </div>
     </div>
 </footer>
@@ -421,12 +436,13 @@
             <use href="./images/vectoropt.svg#icon-Vector"></use>
         </svg>
     </button>
+
     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
-    
-    <form>
+    <form class="modal-form">
         <div class="modal-field">
-        <label class="modal-label" for="user-name">Имя</label>
+        <label for="user-name" class="modal-label" >Имя</label>
+        <div class="modal-input-wrap">
         <input 
         type="text"
         class="modal-input" 
@@ -434,13 +450,15 @@
         required 
         id="user-name"
         />
-        
-    <!-- <svg class="modal-icon-logo" width="12" height="12">
-            <use href="./images/modal.svg#icon-person-black"></use>
-        </svg> -->
-     </div>       
-      
-        <label class="modal-label" for="user-tel">Телефон</label>
+        <svg class="modal-logo" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+            </svg>
+        </div>
+     </div> 
+
+     <div class="modal-field">
+        <label for="user-tel" class="modal-label" >Телефон</label>
+        <div class="modal-input-wrap">
             <input
             type="tel"
             class="modal-input"
@@ -448,9 +466,15 @@
             required
             id="user-tel"
              />
+             <svg class="modal-logo" width="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+        </div>
+    </div>  
         
-
-        <label class="modal-label" for="user-email">Почта</label>
+    <div class="modal-field">
+        <label for="user-email" class="modal-label" >Почта</label>
+        <div class="modal-input-wrap">
             <input 
             type="email"
             class="modal-input"
@@ -458,11 +482,16 @@
             required
             id="user-email"
             />
-        
+            <svg class="modal-logo" width="15" height="12">
+                <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+            </svg>
+        </div>
+    </div>  
 
 <div class="modal-field">
-        <label class="modal-label"
-         for="user-text">Комментарий</label>
+        <label for="user-text" 
+        class="modal-label"
+         >Комментарий</label>
             <textarea
             name="user-text"
             id="user-text"
