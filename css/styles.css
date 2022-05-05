@@ -700,6 +700,9 @@ fill: var(--accent-color);
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:hover {
@@ -724,7 +727,7 @@ fill: var(--accent-color);
     border-radius: 4px;
     padding-left: 30px;
     outline: none;
-    transition-property: border-color;
+    transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -780,15 +783,41 @@ fill: var(--accent-color);
     resize: none;
 }
 
-.modal-checkbox {
+.modal-check {
     margin: 20px auto 30px auto;
-    width: 400.62px;
+    width: 400px;
     height: 24px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+.check-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    align-items: center;
+    color: var(--primary-text-color);
+    display: flex;
+}
+.check-text::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-right: 8px;
+
+}
+.modal-check:checked + .check-text::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/Vectormodal.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .submit-btn {
@@ -806,11 +835,19 @@ fill: var(--accent-color);
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-bg-color);
-    background-color: #188CE8;
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.submit-btn:hover,
+.submit-focus {
+    background-color: #188CE8;;
+}
 
 /* Portfolio styles */
 
