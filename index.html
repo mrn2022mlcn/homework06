@@ -417,11 +417,14 @@
         <h3 class="join">Подпишитесь на рассылку</h3>
         <form>
     <div class="footer-btn">
+
+        <label for="subscribe-mail"></label>
             <input
             type="email"
             class="footer-input"
             name="subscribe-mail"
-            placeholder="E-mail"
+            id="subscribe-mail"
+            placeholder="E-mail" 
             /> 
 
             <button type="submit" 
@@ -503,8 +506,9 @@
             <textarea
             name="user-text"
             id="user-text"
-            rows="8" 
-            placeholder="Введите текст" class="modal-text"
+            rows="10" 
+            placeholder="Введите текст" 
+            class="modal-text"
             ></textarea>
 </div>
 
@@ -516,17 +520,10 @@
     value="policy"
     />
 
-    <label for="modal-check" class="check-text">Соглашаюсь с рассылкой и принимаю  <a href="" class="modal-link">Условия договора</a></label>
+    <label for="modal-check" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия договора</a></label>
 
 </div>
 
-    <!-- <label class="modal-checkbox">
-    <input 
-    type="checkbox"
-    name="accept" 
-    value="" />
-    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-  </label> -->
 
 <button type="submit" class="submit-btn">Отправить</button>
     </form>
