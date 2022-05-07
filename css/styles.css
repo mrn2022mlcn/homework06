@@ -682,13 +682,13 @@ fill: var(--accent-color);
     top: 50%;
     left: 50%;
     min-height: 581px;
-    min-width: 528px;
+    width: 528px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
      0px 1px 1px rgba(0, 0, 0, 0.14), 
      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--primary-bg-color);
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
@@ -777,7 +777,7 @@ fill: var(--accent-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
@@ -804,6 +804,7 @@ fill: var(--accent-color);
     color: var(--primary-text-color);
     display: flex;
 }
+
 .check-text::before {
     content: '';
     width: 16px;
@@ -815,6 +816,7 @@ fill: var(--accent-color);
     margin-right: 8px;
 
 }
+
 .modal-check:checked + .check-text::before {
     background-color: var(--accent-color);
     border: none;
@@ -823,6 +825,9 @@ fill: var(--accent-color);
     background-position: center;
 }
 
+.modal-link {
+    color: var(--accent-color);
+}
 
 .submit-btn {
     display: block;
